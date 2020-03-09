@@ -1,16 +1,11 @@
-# primer
-Code that makes videos for this: youtube.com/c/primerlearning
-
-This is going to be a pretty minimal readme for now, and the code itself is likely very confusing. I intend to clean things up and improve documentation, though I don't know when that will be. If you'd like to receive an email when that update happens, you can submit your email here: https://forms.gle/GHTgKMUaMxqxGUu39
-
 ## Overview  
-This is a library of tools that lets you write high-level functions to build and animate objects in Blender. It's not set up to run from the command line. Instead, it uses the Script Runner addon for Blender, which lets you run scripts by pushing buttons within Blender. This makes it easy to see the results of your scripts and use the Blender interface to experiment with parameters before iterating on your script.
+This is a library of tools that lets you write high-level methods to build and animate objects in Blender. It's has not been made to run from the command line. Alternatively, it uses a Script Runner addon of Blender, which lets you execute scripts by pressing buttons within Blender itself. Which makes it easier to view the effects of your scripts and to experiment with parameters before performing them on the script.
 
 The primary script run by Script Runner in my workflow is draw_scenes.py, whose main() function can be used to call test scripts or run a script from another file.
 
 Much of the structure comes from [manim](https://github.com/3b1b/manim), 3blue1brown's animation engine.
 
-## Using primer
+## Using simulations
 The root object class used for defining and manipulating objects in Blender is called Bobject (blender object). It initializes an object in Blender and defines simple functions for changing the parameters and adding keyframes.
 
 The best scene to try when getting started is probably tex_test(), defined in draw_scenes.py. It creates a TexBobject and morphs through a few strings.
@@ -37,4 +32,4 @@ OpenBabel if you want to do the molecule stuff http://openbabel.org/wiki/Main_Pa
 ## Gotchas  
 Blender comes packaged with its own version of python, so your local python installation and your favorite packages won't be there unless you install them to Blender's version.
 
-Many of the scenes from my videos depend on specific blend files that are imported for use as common objects or components of them. For example, the blob creatures and components of the graphs. If at some point I try to turn this into a more broadly accessible tool, I'll have to include those files in the repo or procedurally generate them.
+Many of the slides from my presentations depend on specific blend files that are imported for use as common objects or components of them. For example, the blob creatures and components of the graphs. If at some point I try to turn this into a more broadly accessible tool, I'll have to include those files in the repo or procedurally generate them.
