@@ -1,0 +1,12 @@
+*.pyc
+__pycache__/
+files/animations
+files/blend
+files/raster
+files/sims
+files/svg
+files/tex
+test.py
+channel_assets/
+draw_molecules/mol/
+draw_molecules/json/
