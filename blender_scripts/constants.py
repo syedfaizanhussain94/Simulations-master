@@ -10,7 +10,7 @@ RENDER_QUALITY = 'final'
 #'medium' or higher turns on expression morphing
 #which takes a few seconds per run
 if RENDER_QUALITY == 'final':
-    RESOLUTION_PERCENTAGE = 90
+    RESOLUTION_PERCENTAGE = 100
     LIGHT_SAMPLING_THRESHOLD = 0.01
     SAMPLE_COUNT = 64
     RENDER_QUALITY = 'high'
